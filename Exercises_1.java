@@ -312,25 +312,18 @@ import java.util.Scanner;
 public class Exercises {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
-		int num = sc.nextInt();
 
-		String s = "";
+		int n1 = sc.nextInt();
+		int n2 = sc.nextInt();
 
-		while (num != 0) {
-			if (num % 2 == 0) {
-				s += "0";
-				num /= 2;
-			} else {
-				s += "1";
-				num = (num - 1) / 2;
-			}
+		while (n1 < n2) {
+			n1 = n2;
+			n2 = sc.nextInt();
 		}
-		System.out.println(s);
 
 
 
 			
 	}
-			
+		
 }
